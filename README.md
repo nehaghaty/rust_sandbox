@@ -4,7 +4,7 @@ This is where my attempt to learn rust will be documented
 Shadowing
 - declare a variable with the same name as the previous variable
 - 1st variable is shadowed by the 2nd
-- different from mut. We get compiler error if let is not used for the shadow
+- different from mut. We get compiler error if `let` is not used for the shadow
 - since a new variable is being created, we can chage the type of the shadow variable, Example:
 
 ```
@@ -70,8 +70,6 @@ Structs
 - rust doesn't have `->`. it has automatic referencing and dereferencing since it has a clear receiver: the type of self (`self`, `&self`, `&mut self`)
 
 ---
-Enums
-- 
 
 
 
