@@ -4,12 +4,12 @@ This is where my attempt to learn rust will be documented
 Shadowing
 - declare a variable with the same name as the previous variable
 - 1st variable is shadowed by the 2nd
-- different from mut. We get compiler error if let is not used for the shadow
+- different from mut. We get compiler error if `let` is not used for the shadow
 - since a new variable is being created, we can chage the type of the shadow variable, Example:
 
 ```
 let spaces = "  ";
-let spaces = spaces.lem();  
+let spaces = spaces.len();  
 ```
 -  cannot do the above with `mut`
 ---
@@ -70,12 +70,15 @@ Structs
 - rust doesn't have `->`. it has automatic referencing and dereferencing since it has a clear receiver: the type of self (`self`, `&self`, `&mut self`)
 
 ---
+<<<<<<< HEAD
 Enums
 - can only be one of its variants
 - use `match` to iterate through enums
 - `if let` helps avoid bolierplate code where all cases except one (or a few) can be ignored.
 - The `Options` enum is included in the prelude. Has values `Some` and `None`.
 - Options helps avoid errors related to having `null` (like assuming a var may have a non null value when it is actually `null`) by making us explicitly handle the `None` case
+=======
+>>>>>>> a28c5dfe34ef08ab1d060b40be7c5e5d1df4825a
 
 ---
 
