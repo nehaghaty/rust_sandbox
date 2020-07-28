@@ -71,7 +71,12 @@ Structs
 
 ---
 Enums
-- 
+- can only be one of its variants
+- use `match` to iterate through enums
+- `if let` helps avoid bolierplate code where all cases except one (or a few) can be ignored.
+- The `Options` enum is included in the prelude. Has values `Some` and `None`.
+- Options helps avoid errors related to having `null` (like assuming a var may have a non null value when it is actually `null`) by making us explicitly handle the `None` case
 
+---
 
 

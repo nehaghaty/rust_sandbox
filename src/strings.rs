@@ -24,7 +24,7 @@ pub fn run(){
     s.push('b');
 
     //assertion
-    assert_eq!(2,s.len());
+    assert_eq!(3,s.len());
     assert_eq!(10,s.capacity());
     println!("{}",s);
 
