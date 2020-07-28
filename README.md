@@ -9,7 +9,7 @@ Shadowing
 
 ```
 let spaces = "  ";
-let spaces = spaces.lem();  
+let spaces = spaces.len();  
 ```
 -  cannot do the above with `mut`
 ---
